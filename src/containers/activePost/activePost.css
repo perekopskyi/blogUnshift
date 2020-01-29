@@ -1,0 +1,14 @@
+.ActivePost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  flex-grow: 1;
+  width: 100%;
+  height: 100vh;
+  background: rgba(101, 224, 193, 0.609);
+}
+
+.ActivePost .nav {
+  margin-bottom: 20px;
+}

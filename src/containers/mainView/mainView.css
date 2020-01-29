@@ -1,0 +1,13 @@
+.MainView {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 100px;
+  flex-grow: 1;
+  width: 100%;
+  background: rgba(101, 103, 224, 0.609);
+}
+
+.MainView h1, .nav {
+  text-align: center;
+}

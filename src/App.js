@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import ActivePost from './containers/activePost/activePost';
+import CreatePost from './containers/createPost/createPost';
+import { Route, Switch } from 'react-router-dom';
+import MainView from './containers/mainView/mainView';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Switch>
+          <Route path="/" exact component={MainView} />
+          <Route path="/post" component={ActivePost} />
+          <Route path="/create" component={CreatePost} />
+        </Switch>
+      </div>
+    )
+  }
 }
 
 export default App;

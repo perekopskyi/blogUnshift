@@ -1,0 +1,16 @@
+.Post {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.Post h1 {
+  color: white;
+  text-align: center;
+}
+
+.Post .wrapper {
+  width: 600px;
+}
